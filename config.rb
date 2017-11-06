@@ -9,7 +9,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-set :home, "/"
+set :home, "/index"
 set :calypso, "/calypso"
 set :hire, "/hire"
 
