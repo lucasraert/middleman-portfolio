@@ -1,15 +1,44 @@
 ---
-title: Le Wagon - Middleman
+title: Lucas Raert –– Product Designer
 ---
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div id="homenav" class='fade-in'>
+  <nav>
+    <%= image_tag "logo.png", id:"logo"%>
+    <a href="/hire" class="hire-link">HIRE ME</a>
+  </nav>
+</div>
+<div id="home" class='fade-in'>
+  <div class="container">
+    <h1>Hello, I am Lucas Raert -<br>
+    A product designer based in Paris</h1>
+    <div class="hire-link-mb">
+      <a href="/hire" class="hire-link-mb__content">HIRE ME</a>
+    </div>
   </div>
+</div>
+<div id="work" class='fade-in'>
+  <div class="block-text center-content u-margin" id="work-calypso">
+    <%= image_tag "workcalypso.png", id:"work-phone"%>
+    <h1>Calypso</h1>
+    <h3>Turn everyone into surf travel agents</h3>
+    <div class="button-container">
+      <%= link_to 'Case study', 'calypso.html', class: 'button' %>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <header>
+    <div class="container">
+      <h1>Get in touch or follow me online</h1>
+      <h3>Send me an email at <a href="mailto:lucasraert@gmail.com">lucasraert@gmail.com</a> and I will get back to you as soon as possible.</h3>
+    </div>
+    <div class="social-container">
+      <ul class="social">
+        <li><%= link_to image_tag('linkedin.svg'), "http://www.linkedin.com/in/lucasraert" %></li>
+        <li><%= link_to image_tag('github-logo.svg'), "http://www.github.com/lucasraert" %></li>
+        <li><%= link_to image_tag('twitter.svg'), "http://www.twitter.com/lucasraert" %></li>
+        <li><%= link_to image_tag('instagram.svg'), "http://www.instagram.com/lucasraert" %></li>
+      </ul>
+    </div>
+  </header>
 </div>

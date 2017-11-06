@@ -1,0 +1,13 @@
+{
+  "name": "middleman-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lucasraert/middleman-portfolio.git",
+  "author": "lucas steuperaert <lucas.steuperaert@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

@@ -3,10 +3,15 @@ activate :autoprefixer do |prefix|
 end
 
 activate :sprockets
+activate :directory_indexes
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+set :home, "/"
+set :calypso, "/calypso"
+set :hire, "/hire"
 
 configure :build do
   activate :minify_css

@@ -1,0 +1,58 @@
+---
+title: Calypso –– Lucas Raert
+---
+
+<a href="/">
+  <div class="ui-menu fade-in" id="menu" onclick="openNav()">
+    <span class="ui-menu__content">
+      <i class="ui-menu__line ui-menu__line_1"></i>
+      <i class="ui-menu__line ui-menu__line_3"></i>
+    </span>
+  </div>
+</a>
+<div id="calypso" class="work">
+  <div class="calypso__hero fade-in"></div>
+  <div id='calypso-header' class='fade-in'>
+    <div class="calypso-smartphone">
+      <%= image_tag "iphonemockup.png", id:'calypso-phone' %>
+    </div>
+    <div class="logo">
+      <%= image_tag "calypsologo.png"%>
+    </div>
+  </div>
+  <section class="block-text intro">
+   <h2>Calypso brings surf enthusiasts together in hundreds of cities to do more of what they love by finding and create city-to-spot car journeys based on their location. This project targets surf enthusiasts of all level living landlocked. From the very beginner to the veteran surfer.</h2>
+ </section>
+ <div class="calypso__content"><%= image_tag "wireframes.png"%></div>
+ <div class="calypso__card"><%= image_tag "demo.gif"%></div>
+ <div class="calypso-colors-typo">
+  <h1 class="center-content u-margin-top">Color / Typography</h1>
+  <div class="colors" style="margin-top: 10vw;">
+    <div class="colors-element">
+      <%= image_tag "colors.png", class:"work-element__image u-margin-left" %>
+      <%= image_tag "colorpalette.png", class:"work-element__image" %>
+    </div>
+    <div class="font-element u-margin-top">
+      <%= image_tag "gothambold.png" %>
+      <%= image_tag "latoregular.png" %>
+      <%= image_tag "latobold.png" %>
+    </div>
+  </div>
+</div>
+<div id="surfers" class="block-image nopadding inner-shadow"></div>
+<div class="calypso__content u-padding-top">
+  <%= image_tag "macbookcalypso.png"%>
+</div>
+<div class="button-container">
+  <a class="button">Coming soon</a>
+</div>
+<section class="block-text">
+  <h3>This project was an opportunity to give me more experience developping Ruby on Rails applications.</h3>
+</section>
+</div>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  const element = document.querySelector(".calypso__hero");
+  element.style.opacity = "1";
+});
+</script>
