@@ -9,10 +9,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-set :home, "/index"
-set :calypso, "/calypso"
-set :hire, "/hire"
-
 configure :build do
   activate :minify_css
   activate :minify_javascript
