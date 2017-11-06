@@ -3,7 +3,11 @@ activate :autoprefixer do |prefix|
 end
 
 activate :sprockets
+# Use “pretty” URLs (without the `.html` suffix)
 activate :directory_indexes
+
+# Append hashes to compiled assets
+activate :asset_hash
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -20,28 +24,4 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
-end
-
-require "rack/codehighlighter"
-require "pygments"
-use Rack::Codehighlighter,
-  :pygments,
-  :element => "pre>code",
-  :pattern => /\A:::([-_+\w]+)\s*\n/,
-  :markdown => true
-
-
-require "sinatra"
-
-class MySinatra < Sinatra::Base
-  get "/" do
-    "Hello World (Sinatra)"
-  end
-  get "/derp.html" do
-    "De doo"
-  end
-end
-
-map "/sinatra" do
-  run MySinatra
 end
