@@ -21,3 +21,11 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+require "rack/codehighlighter"
+require "pygments"
+use Rack::Codehighlighter,
+  :pygments,
+  :element => "pre>code",
+  :pattern => /\A:::([-_+\w]+)\s*\n/,
+  :markdown => true

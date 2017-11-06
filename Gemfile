@@ -11,3 +11,5 @@ gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
+gem "rack-codehighlighter", :git => "git://github.com/wbzyl/rack-codehighlighter.git"
+gem "pygments.rb"
